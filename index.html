@@ -1,0 +1,747 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/aos/aos.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>SilverShort</title>
+
+<body class="home" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="100">
+	<div class="wrapper">
+		<div class="popup">
+	<div class="popup__wrapBody">
+		<div class="popup__body">
+			<div class="popup__content formBlock">
+				<button class="close" type="button">
+					<img class="w-100" src="images/svg/close-mobile.svg" alt="Close">
+				</button>
+				<h5 class="popup__title text-center mx-auto">Insira seus detalhes de contato e um horário conveniente para ligar
+				</h5>
+				<div class="popup__text mx-auto text-center">
+					<p>
+            Ligaremos para você agora ou em outro horário de trabalho</p>
+				</div>
+				<form id="popupForm" class="chimeForm d-flex flex-column" name="chimeform" action="/popup-feedback.php">
+					<label class="chimeForm__labelField text-center">Como podemos chamar você?</label>
+					<div class="chimeForm__wrapField w-100">
+						<input id="popup-name" class="text-center chimeForm__field w-100 reset" type="text" name="popup-name" placeholder="Seu nome">
+						<div class="d-flex chimeForm__notification">
+							<span class="chimeForm__required">Campo obrigatório.</span>
+							<span class="chimeForm__symbols">Pelo menos 2 caracteres.</span>
+						</div>
+					</div>
+					<label class="chimeForm__labelField text-center">Digite seu telefone</label>
+					<div class="chimeForm__wrapField w-100">
+						<input id="popup-phone" class="text-center chimeForm__field w-100 reset" type="tel" name="popup-phone" placeholder="+55(__)_____-____">
+						<div class="d-flex chimeForm__notification">
+							<span class="chimeForm__required">Campo obrigatório.</span>
+						</div>
+					</div>
+					<label class="chimeForm__labelField text-center">Digite seu e-mail</label>
+					<div class="chimeForm__wrapField w-100">
+						<input id="popup-email" class="text-center chimeForm__field w-100 reset" type="text" name="popup-email" placeholder="Seu E-mail">
+						<div class="d-flex chimeForm__notification">
+							<span class="chimeForm__required">Campo obrigatório.</span>
+							<span class="chimeForm__symbols">Por favor, digite o e-mail correto</span>
+						</div>
+					</div>
+					<input type="text" name="popup-invisible" class="chimeForm__field d-none text-center reset w-100">
+					<div class="chimeForm__wrapButtons d-flex justify-content-between">
+						<button id="call-now" type="button" class="chimeForm__button chimeForm__field">Ligue agora</button>
+						<button id="call-time" type="button" class="chimeForm__button chimeForm__field active">Quando ligar</button>
+					</div>
+					<input class="chimeForm__hidden" type="text" name="call-now" value="Call now">
+					<input class="text-center chimeForm__field chimeForm__dateTime reset" type="text" name="date-time" placeholder="Por exemplo:  21 de janeiro as 14:00">
+					<button id="popup-send" type="submit" class="chimeForm__submit">Me ligue de volta</button>
+				</form>
+				<p class="chimeForm__textPrivacyPolicy">Ao clicar no botão, você concorda com o processamento
+          seus dados pessoais e concorda com os <a href="/privacy-policy.html">Política de Privacidade</a>
+			</p></div>
+			<div class="popup__content thankBlock popup__content-close">
+				<a href="/" class="logo"><span class="char1">S</span><span class="char2">i</span><span class="char3">l</span><span class="char4">v</span><span class="char5">e</span><span class="char6">r</span><span class="char7">S</span><span class="char8">h</span><span class="char9">o</span><span class="char10">r</span><span class="char11">t</span></a>
+				Fechar revisão 
+				completa	<div class="popup__wrap">
+					<h3 class="popup__thanks mx-auto text-center">
+						Obrigado, aceitamos sua inscrição!</h3>
+					<p class="popup__textAfterSending text-center">Nosso especialista entrará em contato com você em breve.</p>
+					<p class="popup__goodDay text-center">Tenha um bom dia!</p>
+				</div>
+				<button type="button" class="chimeForm__submit close">Fechar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header id="header" class="header position-fixed">
+	<div class="container">
+		<div class="row">
+			<div class="col top-panel align-items-center d-flex justify-content-between">
+				<a href="/" class="logo"><span class="char1">S</span><span class="char2">i</span><span class="char3">l</span><span class="char4">v</span><span class="char5">e</span><span class="char6">r</span><span class="char7">S</span><span class="char8">h</span><span class="char9">o</span><span class="char10">r</span><span class="char11">t</span></a>
+				<nav id="topmenu" class="topmenu d-flex">
+					<button id="burger" class="topmenu__burger ml-auto" type="button">
+						<span class="topmenu__burgerLine">Burger menu</span>
+					</button>
+					<ul class="topmenu__list">
+						<li class="topmenu__listItem">
+							<a href="#firstScreen" class="topmenu__link">Home</a>
+						</li>
+						<li class="topmenu__listItem">
+							<a href="#about" class="topmenu__link">Sobre-Nós</a>
+						</li>
+						<li class="topmenu__listItem">
+							<a href="#services" class="topmenu__link">Vantagens</a>
+						</li>
+						<li class="topmenu__listItem">
+							<a href="#reviews" class="topmenu__link">Avaliações</a>
+						</li>
+						<li class="topmenu__listItem">
+							<a href="#faq" class="topmenu__link">Faq</a>
+						</li>
+						<li class="topmenu__listItem">
+							<a href="#news" class="topmenu__link">Notícias</a>
+						</li>
+						<li class="topmenu__listItem desktop-hidden">
+							<a href="#appointment" class="topmenu__link">Compromisso Agora</a>
+						</li>
+					</ul>
+				</nav>
+				<button id="appointmentBtn" type="button" class="header__button">Compromisso Agora</button>
+			</div>
+		</div>
+	</div>
+</header>
+		<div id="firstScreen" class="wrap-firstScreen overflow-hidden position-relative">
+			<div class="firstScreen container">
+				<div class="row align-items-center h-100">
+					<div class="col-lg-5">
+						<h2 class="firstScreen__aboveTitle aos-init aos-animate" data-aos="fade-up">Separação Inteligente. Trabalhamos para obter resultados eficazes com o processo SilverShort!</h2>
+						<h1 class="firstScreen__title aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">SilverShort</h1>
+						<p class="firstScreen__text aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><span>Processo Silvershort</span> — é uma abordagem inteligente na separação do PVC, 
+              contribuindo para um mundo mais ecológico e limpo. 
+              Utilizando nossa tecnologia inovadora, 
+              removemos de forma eficiente as impurezas e contaminantes do PVC, 
+              tornando-o apto para reciclagem. 
+              Com isso, 
+              reduzimos a dependência de materiais virgens e promovemos a preservação dos recursos naturais. </p>
+						<button id="toCreateAGroup" type="button" class="firstScreen__btn aos-init aos-animate" data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">Ligar de voltar!</button>
+					</div>
+					<div class="col-7 h-100 align-items-center d-none d-lg-flex fs-ilustratio-col">
+						<img class="firstScreen__bigIllustration aos-init aos-animate" src="images/svg/fs-Illustrations.svg" alt="FS big Illustration" data-aos="zoom-in" data-aos-delay="300">
+					</div>
+				</div>
+				<button class="firstScreen__btnDown position-absolute aos-init aos-animate" type="button" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
+					<svg width="23" height="13.958" viewBox="0 0 23 13.958">
+						<path d="M11,22.271.768,12.035a1.264,1.264,0,0,1,0-1.788L1.962,9.053a1.264,1.264,0,0,1,1.786,0l8.15,8.112,8.15-8.112a1.264,1.264,0,0,1,1.786,0l1.194,1.194a1.264,1.264,0,0,1,0,1.788L12.792,22.271A1.264,1.264,0,0,1,11,22.271Z" transform="translate(-0.398 -8.683)" fill="#657783"></path>
+					</svg>
+				</button>
+			</div>
+			<img class="fs-element" src="images/svg/fs-element.svg" alt="FS Element">
+		</div>
+		<main class="main">
+			<section id="about" class="about position-relative">
+				<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Sobre nós</h2>
+				<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">Separando com inovação e qualidade</p>
+				<div class="container about__content">
+					<div class="row align-items-center">
+						<div class="col-lg-6 content-column">
+							<h3 class="about__title aos-init" data-aos="fade-in" data-aos-delay="100">Pensado apenas para um resultado positivo
+								- você gosta do seu
+								negócio!</h3>
+							<p class="about__text aos-init" data-aos="fade-in" data-aos-delay="200">Uma solução eficaz na separação do PVC,
+								garantindo um mundo mais sustentável e limpo.
+								com uma ampla tecnolia e 
+								nossa abordagem inovadora e dedicada é projetada para otimizar o processo de reciclagem,
+								reduzindo o desperdício e maximizando a utilização dos materiais.</p>
+							<p class="about__text aos-init" data-aos="fade-in" data-aos-delay="300"> você pode contar com uma solução que cria
+								um ambiente limpo
+								Nosso objetivo é proporcionar uma experiência harmoniosa, 
+								entre lucros signifativos, enquanto promovemos a sustentabilidade ambiental.
+								Junte-se a nós e descubra como a Silvershort pode transformar o seu negócio, oferecendo uma solução inovadora que alia eficiência, 
+								qualidade e compromisso com o meio ambiente.</p>
+						</div>
+						<div class="col-lg-6 d-flex justify-content-lg-end aos-init" data-aos="zoom-in" data-aos-delay="300">
+							<img src="images/svg/about-illustration.svg" alt="About Illustration">
+						</div>
+					</div>
+				</div>
+				<div class="wrap-about__bottomInfo overflow-hidden position-relative">
+					<img class="about__bottomInfoBG position-absolute" src="images/svg/about-bottom-illustration.svg" alt="About bottom illustration">
+					<div class="container about__bottomInfo align-items-end d-flex">
+						<div class="row">
+							<div class="col-12"></div>
+							<div class="col-xl-4 col-lg-12 align-items-center d-flex about__bottomInfoItem">
+								<h4 class="about__bottomInfoTitle aos-init" data-aos="fade-left">Porque escolher-nos?</h4>
+							</div>
+							<div class="col-xl-2 col-sm-3 about__bottomInfoItem aos-init" data-aos="fade-in" data-aos-delay="300">
+								<p>Processo inteligente</p>
+								<p>Alta qualidade</p>
+							</div>
+							<div class="col-xl-2 col-sm-3 about__bottomInfoItem aos-init" data-aos="fade-in" data-aos-delay="300">
+								<p>Públicos crescentes</p>
+								<p>Crescente número de clientes</p>
+							</div>
+							<div class="col-xl-2 col-sm-3 about__bottomInfoItem aos-init" data-aos="fade-in" data-aos-delay="300">
+								<p>Inovação</p>
+								<p>Fácil costumização</p>
+							</div>
+							<div class="col-xl-2 col-sm-3 about__bottomInfoItem aos-init" data-aos="fade-in" data-aos-delay="300">
+								<p>Time profissional</p>
+								<p>Resultado positivo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Vantagens</h2>
+							<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">O que nós fazemos ?</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-3 aos-init" data-aos="fade-left">
+							<div class="services__blockImage position-relative">
+								<span class="services__zero">
+									<span class="circle position-absolute"></span>
+									<span class="bg position-absolute"></span>
+									<span class="services__numberZero position-absolute">0</span>
+								</span>
+								<div class="services__number position-absolute">1</div>
+								<div class="sk-spinner sk-spinner-pulse"></div>
+								<img class="services__image position-absolute b-lazy h-100 w-100" data-src="images/service-1.avif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Digital Advertising">
+							</div>
+							<h3 class="services__text text-center position-relative">Limpeza ambiental</h3>
+						</div>
+						<div class="col-md-6 col-lg-3 aos-init" data-aos="fade-left" data-aos-delay="350">
+							<div class="services__blockImage position-relative">
+								<span class="services__zero">
+									<span class="circle position-absolute"></span>
+									<span class="bg position-absolute"></span>
+									<span class="services__numberZero position-absolute">0</span>
+								</span>
+								<div class="services__number position-absolute">2</div>
+								<div class="sk-spinner sk-spinner-pulse"></div>
+								<img class="services__image position-absolute b-lazy h-100 w-100" data-src="images/service-2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Social Media">
+							</div>
+							<h3 class="services__text text-center position-relative">Diminuição dos custos</h3>
+						</div>
+						<div class="col-md-6 col-lg-3 aos-init" data-aos="fade-left" data-aos-delay="650">
+							<div class="services__blockImage position-relative">
+								<span class="services__zero">
+									<span class="circle position-absolute"></span>
+									<span class="bg position-absolute"></span>
+									<span class="services__numberZero position-absolute">0</span>
+								</span>
+								<div class="services__number position-absolute">3</div>
+								<div class="sk-spinner sk-spinner-pulse"></div>
+								<img class="services__image position-absolute b-lazy h-100 w-100" data-src="images/service-3.avif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Research Strategy">
+							</div>
+							<h3 class="services__text text-center position-relative">Fácil manuseio</h3>
+						</div>
+						<div class="col-md-6 col-lg-3 aos-init" data-aos="fade-left" data-aos-delay="950">
+							<div class="services__blockImage position-relative">
+								<span class="services__zero">
+									<span class="circle position-absolute"></span>
+									<span class="bg position-absolute"></span>
+									<span class="services__numberZero position-absolute">0</span>
+								</span>
+								<div class="services__number position-absolute">4</div>
+								<div class="sk-spinner sk-spinner-pulse"></div>
+								<img class="services__image position-absolute b-lazy h-100 w-100" data-src="images/service-4.avif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Strategic Marketing">
+							</div>
+							<h3 class="services__text text-center position-relative">Eficiência Operacional</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="works overflow-hidden position-relative">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Como funciona ?</h2>
+							<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">Como chegará ao resultado 
+							que você merece</p>
+						</div>
+					</div>
+					<div class="row position-relative">
+						<div class="col-md-6 position-relative aos-init" data-aos="fade-in">
+							<img class="works__illustration position-absolute" src="images/svg/works-illustration-1.webp" alt="Customer flow will increase - 5-10 timesor more.">
+							<div class="works__blockText align-items-center d-flex position-relative text-center">
+								<div class="works__triangle position-absolute">Triangle</div>
+								<p>Primeiro o PVC contaminado é moido - <strong> em pedaços pequenos</strong></p>
+							</div>
+							<img class="works__arrowOne position-absolute" src="images/svg/works-01.svg" alt="Arrow One">
+						</div>
+						<div class="col-md-6 aos-init" data-aos="fade-in">
+							<img class="works__illustration position-absolute" src="images/svg/works-illustration-2.avif" alt="The quality will grow service and professionalism employees">
+							<div class="works__blockText align-items-center d-flex position-relative text-center">
+								<div class="works__triangle position-absolute">Triangle</div>
+								<p>Depois <strong>O PVC moido é levado para um tanque agitado junto com a solução de nitrato de prata</strong> 
+									assim realizando a sepração </p>
+							</div>
+							<img class="works__arrowTwo position-absolute" src="images/svg/works-02.svg" alt="Arrow Two">
+						</div>
+						<div class="col-md-6 aos-init" data-aos="fade-in">
+							<img class="works__illustration position-absolute" src="images/svg/works-illustration-3.webp" alt="It will decrease by 40-70% attraction cost new client">
+							<div class="works__blockText align-items-center d-flex position-relative text-center">
+								<div class="works__triangle position-absolute">Triangle</div>
+								<p>Após a separação <strong>o material contaminante é vendido ou descartado</strong> e o pvc limpo é levado para a secadora</p>
+							</div>
+						</div>
+						<div class="col-md-6 aos-init" data-aos="fade-in">
+							<img class="works__illustration position-absolute" src="images/svg/works-illustration-4.svg" alt="The number will increase repeat visits - will become more regular customers">
+							<div class="works__blockText align-items-center d-flex position-relative text-center">
+								<div class="works__triangle position-absolute">Triangle</div>
+								<p>Por fim <strong> o PVC está separado e limpo</strong> agora - pode voltar a ser usado ou ser vendido
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="images/svg/works-left-bottom.svg" class="works__illustrationLeft position-absolute" alt="">
+				<img src="images/svg/works-right-top.svg" class="works__illustrationRight position-absolute" alt="">
+			</section>
+
+			<section id="reviews" class="reviews overflow-hidden position-relative">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">AVALIAÇÕES</h2>
+							<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">O que nossos
+								estudos dizem?</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="reviews__slider swiper-conteiner overflow-hidden swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-ios">
+								<div class="reviews__wrapper swiper-wrapper" id="swiper-wrapper-4df957210391060817" aria-live="polite">
+									<div class="reviews__slide swiper-slide container swiper-slide-visible swiper-slide-active" style="width: 390px; opacity: 1; transform: translate3d(0px, 0px, 0px);" role="group" aria-label="1 / 3">
+										<div class="row">
+											<div class="col-lg-6 aos-init" data-aos="fade">
+												<div class="reviews__blockImage overflow-hidden position-relative">
+													<div class="sk-spinner sk-spinner-pulse"></div>
+													<img class="swiper-lazy reviews__image position-absolute swiper-lazy-loaded" src="images/jon-clinvud.jpg" alt="Jon Clinvud">
+												</div>
+											</div>
+											<div class="col-lg-6 aos-init" data-aos="fade">
+												<h3 class="reviews__name">Jon Clinvud</h3>
+												<div class="reviews__review position-relative">
+													<img class="reviews__quote reviews__quote-top position-absolute" src="images/svg/quote.svg" alt="Quote">
+													<div class="reviews__fullReview close">
+														<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+															aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+															voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<button type="button" class="reviews__button">
+															<span class="reviews__buttonText reviews__buttonRead">Read full
+																review</span>
+															<span class="reviews__buttonText reviews__buttonCloce">Close full
+																review</span>
+														</button>
+													</div>
+													<img class="reviews__quote reviews__quote-bottom position-absolute" src="images/svg/quote.svg" alt="Quote">
+												</div>
+												<div class="reviews__wrapNavigation align-items-center d-flex justify-content-center position-relative">
+													<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="true">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="false">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="reviews__slide swiper-slide container swiper-slide-next" style="width: 390px; opacity: 0; transform: translate3d(-390px, 0px, 0px);" role="group" aria-label="2 / 3">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="reviews__blockImage overflow-hidden position-relative">
+													<div class="sk-spinner sk-spinner-pulse"></div>
+													<img class="swiper-lazy reviews__image position-absolute" data-src="images/melissa-mcbride.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Melissa McBride">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<h3 class="reviews__name">Melissa McBride</h3>
+												<div class="reviews__review position-relative">
+													<img class="reviews__quote reviews__quote-top position-absolute" src="images/svg/quote.svg" alt="Quote">
+													<div class="reviews__fullReview close">
+														<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+															voluptatem eos voluptas asperiores nulla quisquam sit neque deserunt
+															necessitatibus possimus, vero assumenda perspiciatis accusantium, totam
+															mollitia tempore aperiam, voluptatibus dolore dolor aliquid. Ut, placeat
+															officia. Vitae soluta doloribus, necessitatibus temporibus, a magni sunt
+															corporis eveniet nam inventore minima adipisci consequatur quasi ratione.
+															Tempora voluptatibus alias itaque suscipit dolorem, rerum quis!</p>
+														<button type="button" class="reviews__button">
+															<span class="reviews__buttonText reviews__buttonRead">Read full
+																review</span>
+															<span class="reviews__buttonText reviews__buttonCloce">Close full
+																review</span>
+														</button>
+													</div>
+													<img class="reviews__quote reviews__quote-bottom position-absolute" src="images/svg/quote.svg" alt="Quote">
+												</div>
+												<div class="reviews__wrapNavigation align-items-center d-flex justify-content-center position-relative">
+													<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="true">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="false">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="reviews__slide swiper-slide container" style="width: 390px; opacity: 0; transform: translate3d(-780px, 0px, 0px);" role="group" aria-label="3 / 3">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="reviews__blockImage overflow-hidden position-relative">
+													<div class="sk-spinner sk-spinner-pulse"></div>
+													<img class="swiper-lazy reviews__image position-absolute" data-src="images/john-gordon.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="John Gordon">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<h3 class="reviews__name">John Gordon</h3>
+												<div class="reviews__review position-relative">
+													<img class="reviews__quote reviews__quote-top position-absolute" src="images/svg/quote.svg" alt="Quote">
+													<div class="reviews__fullReview close">
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam mollitia
+															doloremque voluptatem esse assumenda rem minus aperiam odio at nostrum,
+															dolore velit quas minima quae nihil. Reiciendis unde repellat dolorem id
+															rem, expedita nemo earum itaque nostrum ipsa amet temporibus repellendus
+															ipsam inventore accusamus consequuntur minima nobis, cupiditate nam
+															dignissimos quos adipisci? Similique, illo mollitia!</p>
+														<button type="button" class="reviews__button">
+															<span class="reviews__buttonText reviews__buttonRead">Read full
+																review</span>
+															<span class="reviews__buttonText reviews__buttonCloce">Close full
+																review</span>
+														</button>
+													</div>
+													<img class="reviews__quote reviews__quote-bottom position-absolute" src="images/svg/quote.svg" alt="Quote">
+												</div>
+												<div class="reviews__wrapNavigation align-items-center d-flex justify-content-center position-relative">
+													<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="true">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4df957210391060817" aria-disabled="false">
+														<svg width="19.032" height="31.999" viewBox="0 0 19.032 31.999">
+															<path d="M15.223,10.772a2.774,2.774,0,0,1,3.877,0L32.647,24.208a2.685,2.685,0,0,1,.085,3.734L19.384,41.182a2.765,2.765,0,0,1-3.877.014,2.686,2.686,0,0,1,0-3.833L26.853,25.977,15.223,14.591A2.657,2.657,0,0,1,15.223,10.772Z" transform="translate(-14.414 -9.983)" fill="#223242"></path>
+														</svg>
+													</div>
+													<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						</div>
+					</div>
+				</div>
+				<img class="reviews__illustrationLeft position-absolute" src="images/svg/reviews-illustration-left.svg" alt="Reviews Illustration left">
+				<img class="reviews__illustrationRight position-absolute" src="images/svg/reviews-illustration-right.svg" alt="Reviews Illustration right">
+			</section>
+			<section id="appointment" class="appointment container">
+				<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Marque horario</h2>
+				<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">
+					Inscreva-se agora, indicando um horário e data convenientes para você</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="appointment__wrapIllustration position-relative aos-init" data-aos="fade-down">
+							<img class="appointment__illustration position-relative" src="images/svg/appointment-illustration.svg" alt="Illustration">
+							<img class="appointment__arrow position-absolute" src="images/svg/appointment-arrow.svg" alt="Arrow">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<form action="/feedback.php" name="appointment" id="appointmentForm" class="appointment__form d-flex flex-wrap position-relative" method="POST" autocomplete="off">
+							<div class="appointment__wrapField aos-init" data-aos="fade-right">
+								<label class="appointment__label d-block">Nome</label>
+								<input type="text" name="first-name" placeholder="Seu nome" id="first-name" class="appointment__field reset w-100">
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+									<span class="appointment__symbols">Pelo menos 2 caracteres.</span>
+								</div>
+							</div>
+							<div class="appointment__wrapField aos-init" data-aos="fade-left">
+								<label class="appointment__label d-block">Phone</label>
+								<input id="phone" type="tel" name="phone" placeholder="+55(__)_____-____" class="appointment__field reset w-100">
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+								</div>
+							</div>
+							<div class="appointment__wrapField aos-init" data-aos="fade-right">
+								<label class="appointment__label d-block">Email</label>
+								<input id="email" type="email" name="email" placeholder="example@gmail.com" class="appointment__field reset w-100">
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+									<span class="appointment__symbols">Please enter correct Email</span>
+								</div>
+							</div>
+							<div class="appointment__wrapField aos-init" data-aos="fade-left">
+								<label class="appointment__label d-block">Data do encontro</label>
+								<input id="date" type="text" name="date" class="appointment__field reset w-100" placeholder="21/05/2023">
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+								</div>
+							</div>
+							<div class="appointment__wrapField aos-init" data-aos="fade-right">
+								<label class="appointment__label d-block">Hórario</label>
+								<input id="time" type="text" name="time" class="appointment__field reset w-100" placeholder="12:45">
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+								</div>
+							</div>
+							<div class="appointment__wrapField d-none">
+								<label class="appointment__label d-block">Label</label>
+								<input type="text" name="invisible" class="appointment__field reset w-100">
+							</div>
+							<div class="appointment__wrapField appointment__wrapField-wrapTextarea w-100 aos-init" data-aos="fade-left">
+								<label class="appointment__label d-block">Comment</label>
+								<textarea id="message" name="message" placeholder="Olá..." class="appointment__field appointment__field-message reset w-100"></textarea>
+								<div class="d-flex appointment__notification position-absolute">
+									<span class="appointment__required">Campo obrigatório.</span>
+									<span class="appointment__symbols">Pelo menos 20 caracteres.</span>
+								</div>
+							</div>
+							<div class="appointment__wrapButtonText d-flex flex-wrap flex-md-nowrap align-items-center aos-init" data-aos="fade" data-aos-delay="600" data-aos-offset="0">
+								<button id="appointment-send" type="submit" class="appointment__submit">Enviar</button>
+								<p class="appointment__text">Ao clicar no botão, você concorda em
+									processar seus dados pessoais e concordar
+									àe <a href="/privacy-policy.html">Política de Privacidade</a></p>
+							</div>
+							<div id="textAfterSending" class="appointment__textAfterSending position-absolute align-items-center justify-content-center">
+								<p>Mensagem enviada.</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section id="faq" class="faq position-relative overflow-hidden">
+				<div class="container">
+					<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">FAQ</h2>
+					<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">Perguntas 
+						frequentes</p>
+					<div class="row position-relative">
+						<div class="col-lg-6">
+							<p data-aos="fade" class="aos-init">Bem-vindo à nossa seção de Perguntas Frequentes (FAQ). Aqui, <strong> buscamos fornecer respostas 
+								claras e abrangentes</strong> para as dúvidas mais comuns que nossos clientes costumam ter. </p>
+							<p data-aos="fade" class="aos-init">Nossa intenção é garantir que você tenha todas as informações necessárias para tomar decisões informadas e aproveitar ao máximo nossa parceria. 
+								Se você tiver alguma pergunta adicional que não esteja listada aqui, 
+								não hesite em nos contatar. <strong>Estamos prontos para ajudar e fornecer as respostas de que você precisa!</strong> Confira abaixo algumas das questões que abordaremos: </p>
+							<p data-aos="fade" class="aos-init">“O sucesso não é alcançado através do mero conforto, 
+								mas sim pela disposição de enfrentar desafios e perseverar diante das adversidades.”</p>
+							<div class="accordion js-accordion">
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up">
+									<div class="accordion-header js-accordion-header">Como funciona o processo de limpeza ambiental?</div>
+									<div class="accordion-body js-accordion-body overflow-hidden">
+										<div class="accordion-body__contents">
+											<p>O Silvershort utiliza um processo inovador e eficiente para separar materiais de forma inteligente, como o PVC
+												contribuindo para a limpeza ambiental.</p>
+											<p>Utilizando-se tecnologias avançadas de triagem e separação que garantem a máxima eficácia na reciclagem e redução de resíduos.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up" data-aos-delay="200">
+									<div class="accordion-header js-accordion-header">Qual é o tempo de retorno do investimento ao adotar o Silvershort?
+									</div>
+									<div class="accordion-body js-accordion-body">
+										<div class="accordion-body__contents">
+											<p>O Silvershort oferece uma solução que pode ajudar a reduzir os custos das empresas de diversas formas. <strong>Ao separar materiais de forma inteligente</strong>, é possível aproveitar ao máximo os recursos disponíveis e evitar desperdícios. Além disso, a reciclagem eficiente promovida pelo Silvershort pode gerar economias significativas em comparação com a compra de novos materiais.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up" data-aos-delay="400">
+									<div class="accordion-header js-accordion-header">É possível personalizar o processo de acordo com as necessidades específicas do cliente?</div>
+									<div class="accordion-body js-accordion-body">
+										<div class="accordion-body__contents">
+											<p>Sim, entendemos que cada cliente possui necessidades específicas. <strong>Por isso, trabalhamos em estreita colaboração com nossos clientes para personalizar o processo do Silvershort </strong> de acordo com suas necessidades e requisitos particulares. Adaptamos nossas soluções para atender às demandas específicas de sua empresa, garantindo resultados eficientes e satisfatórios.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="faq__BlockImage overflow-hidden position-relative aos-init" data-aos="fade">
+								<div class="sk-spinner sk-spinner-pulse"></div>
+								<img class="faq__image b-lazy" data-src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+							</div>
+							<div class="accordion js-accordion">
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up">
+									<div class="accordion-header js-accordion-header">Quais são os resultados esperados após a implementação do Silvershort?
+									</div>
+									<div class="accordion-body js-accordion-body">
+										<div class="accordion-body__contents">
+											<p>Após a implementação do Silvershort <strong> você pode esperar uma melhoria 
+												significativa na eficiência, 
+												redução de resíduos, economia de custos e contribuição positiva para o meio ambiente.</strong> Nossos clientes costumam relatar maior produtividade, 
+												melhores práticas de reciclagem e um impacto ambiental reduzido em suas operações.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up" data-aos-delay="200">
+									<div class="accordion-header js-accordion-header">Quais são as etapas envolvidas na implementação do projeto Silvershort?</div>
+									<div class="accordion-body js-accordion-body">
+										<div class="accordion-body__contents">
+											<p>A implementação do projeto Silvershort envolve uma série de etapas cuidadosamente planejadas, <strong>desde a análise inicial dos requisitos até a instalação
+												 e integração do sistema. </strong> desde a análise inicial dos requisitos até a instalação e integração do sistema.
+												 Nossos especialistas acompanham todo o processo, fornecendo orientações e suporte técnico para garantir uma transição suave e eficiente.</p>
+											<p>A primeira etapa consiste na análise inicial dos requisitos.  <strong>Nossos especialistas realizam uma avaliação detalhada das necessidades específicas de cada cliente</strong> levando em consideração fatores como tipo de material a ser processado, volumes de produção, restrições operacionais e metas ambientais.</p>
+											<p>Com base nessa análise, <strong>desenvolvemos um plano 
+												personalizado de implementação.</strong> Isso envolve a definição de marcos e prazos, alocação de recursos adequados e criação de um cronograma de trabalho detalhado. Nosso objetivo é garantir uma implementação eficiente e dentro do prazo estabelecido.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item js-accordion-item overflow-hidden aos-init" data-aos="fade-up" data-aos-delay="400">
+									<div class="accordion-header js-accordion-header">Quais são os benefícios ambientais do uso do Silvershort?
+									</div>
+									<div class="accordion-body js-accordion-body">
+										<div class="accordion-body__contents">
+											<p>Ao adotar o Silvershort, <strong> você estará contribuindo significativamente para a preservação do meio ambiente. </strong> Nossos processos de separação inteligente e reciclagem eficiente ajudam a reduzir a poluição, economizar recursos naturais e diminuir a emissão de gases de efeito estufa, promovendo um futuro mais sustentável.</p>
+											<p>Outro benefício ambiental importante do Silvershort <strong>é a promoção da economia circular. </strong>Ao separar e reciclar materiais de forma inteligente, estamos fechando o ciclo de produção, transformando resíduos em novos recursos. Essa abordagem reduz a dependência de recursos naturais limitados e incentiva a utilização de materiais reciclados em novos processos produtivos.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="faq__illustration position-absolute" src="images/svg/faq-illustration.svg" alt="FAQ Illustration">
+			</section>
+			<section id="news" class="lastNews position-relative overflow-hidden">
+				<div class="container position-relative">
+					<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Ultimas Noticias</h2>
+					<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">Melhores insights</p>
+					<div class="row">
+						<div class="col-md-4 aos-init" data-aos="fade-up">
+							<a href="#" class="lastNews__BlockImage overflow-hidden position-relative">
+								<span class="sk-spinner sk-spinner-pulse"></span>
+								<img class="lastNews__image position-absolute b-lazy" data-src="images/last-new-1.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="How to develop a company correctly?">
+							</a>
+							<div class="lastNews__separator">Separator</div>
+							<h3 class="lastNews__title">
+								<a href="#" class="lastNews__titleLink">How to develop a company correctly?</a>
+							</h3>
+							<p class="lastNews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						</div>
+						<div class="col-md-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+							<a href="#" class="lastNews__BlockImage overflow-hidden position-relative">
+								<span class="sk-spinner sk-spinner-pulse"></span>
+								<img class="lastNews__image position-absolute b-lazy" data-src="images/last-new-2.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+							</a>
+							<div class="lastNews__separator">Separator</div>
+							<h3 class="lastNews__title">
+								<a href="#" class="lastNews__titleLink">15 Digital Marketing Mistakes to Avoid</a>
+							</h3>
+							<p class="lastNews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						</div>
+						<div class="col-md-4 aos-init" data-aos="fade-up" data-aos-delay="400">
+							<a href="#" class="lastNews__BlockImage overflow-hidden position-relative">
+								<span class="sk-spinner sk-spinner-pulse"></span>
+								<img class="lastNews__image position-absolute b-lazy" data-src="images/last-new-3.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Marketing strategy rules">
+							</a>
+							<div class="lastNews__separator">Separator</div>
+							<h3 class="lastNews__title">
+								<a href="#" class="lastNews__titleLink">Marketing Strategy Rules</a>
+							</h3>
+							<p class="lastNews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						</div>
+					</div>
+				</div>
+				<img class="lastNews__illustrationLeft position-absolute" src="images/svg/lastNews-illustrationLeft.svg" alt="Last news Illustration left">
+				<img class="lastNews__illustrationRight position-absolute" src="images/svg/lastNews-illustrationRight.svg" alt="Last news Illustration right">
+			</section>
+			<div class="subscribe container position-relative">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="subscribe__text text-center aos-init" data-aos="fade-in">
+							Inscreva-se agora - mantenha-se atualizado com novos
+							insights</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="subscribe__BlockImage overflow-hidden position-relative aos-init" data-aos="fade" data-aos-delay="300">
+							<div class="sk-spinner sk-spinner-pulse"></div>
+							<img class="subscribe__image position-absolute b-lazy" data-src="images/subscribe.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+						</div>
+					</div>
+					<div class="col-md-6 align-items-center d-flex">
+						<form id="subscribe" class="subscribe__form d-flex w-100" action="#" name="subscribeForm" method="POST">
+							<input type="email" name="email" class="subscribe__field h-100" placeholder="Seu E-mail">
+							<button type="submit" class="subscribe__submit h-100">Inscreva-se</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="before-footer">
+	<svg viewBox="0 0 1919.289 108.543">
+		<defs>
+			<linearGradient id="linear-gradientFooter" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+				<stop offset="0" stop-color="#059469"></stop>
+				<stop offset="1" stop-color="#28b0f2"></stop>
+			</linearGradient>
+		</defs>
+		<path d="M0,0S155.888-64.222,257.492,0,1574.715,70.548,1753.749,0s165.3,78.415,165.3,78.415L0,80Z" transform="translate(0 28.543)" opacity="0.818" fill="url(#linear-gradientFooter)"></path>
+	</svg>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-4 col-12 d-flex justify-content-center justify-content-md-start">
+				<a class="footer__logo logo" href="/"><span class="char1">S</span><span class="char2">i</span><span class="char3">l</span><span class="char4">v</span><span class="char5">e</span><span class="char6">r</span><span class="char7">S</span><span class="char8">h</span><span class="char9">o</span><span class="char10">r</span><span class="char11">t</span></a>
+			</div>
+			<div class="col-md-4 col-12 text-center">
+				<h2 class="footer__title">Separação: nitrato de prata</h2>
+				<p class="footer__text">O poder da separação inteligente</p>
+			</div>
+			<div class="col-md-4 col-12 d-flex justify-content-md-end">
+				<ul class="footer__list d-flex justify-content-between d-md-block flex-wrap">
+					<li class="footer__listItem">
+						<a class="footer__listIink" href="mailto:Example@gmail.com">SilverShort@gmail.com</a>
+					</li>
+					<li class="footer__listItem">
+						<a class="footer__listIink" href="tel:89998887788">+55 (99) 99999-9999</a>
+					</li>
+					<li class="footer__listItem">
+						<a class="footer__listIink" href="/privacy-policy.html">Politica de Privacidade</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<p class="footer__copyright">© 2023 Todos os direitos reservados. Design por VS</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="js/scripts.min.js"></script>
+<script src="js/aos/aos.min.js"></script>
+<script src="js/aos/aos-settings.js"></script>
+
+	<!-- Block copy -->
+	<script src="js/block-copy.min.js"></script>
+	<script src="js/block-copy.js"></script>
+
+
+</body></html>
