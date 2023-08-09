@@ -6975,7 +6975,7 @@ body {
     transition: .3s
 }
 
-.logo span:nth-child(1),.logo span:nth-child(7) {
+.logo span:nth-child(1),.logo span:nth-child(9) {
     background-color: #024c40;
     color: #fff;
     font-weight: 400
