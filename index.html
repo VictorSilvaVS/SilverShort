@@ -484,7 +484,7 @@
 				<img class="reviews__illustrationRight position-absolute" src="images/svg/reviews-illustration-right.svg" alt="Reviews Illustration right">
 			</section>
 			<section id="appointment" class="appointment container">
-				<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Marque horario</h2>
+				<h2 class="section-title text-uppercase text-center aos-init" data-aos="fade-in">Marque horário</h2>
 				<p class="section-under-title text-center aos-init" data-aos="fade-in" data-aos-delay="200">
 					Inscreva-se agora, indicando um horário e data convenientes para você</p>
 				<div class="row">
@@ -661,7 +661,7 @@
 							</a>
 							<div class="lastNews__separator">Separator</div>
 							<h3 class="lastNews__title">
-								<a href="https://mundodoplastico.plasticobrasil.com.br/gestao/contaminacao-de-materiais-cuidados-na-industria-de-plasticos" class="lastNews__titleLink">Contaminação de materiais: cuidados na indústria de plásticos</a>
+								<a  href="https://mundodoplastico.plasticobrasil.com.br/gestao/contaminacao-de-materiais-cuidados-na-industria-de-plasticos" class="lastNews__titleLink">Contaminação de materiais: cuidados na indústria de plásticos</a>
 							</h3>
 							<p class="lastNews__text">Durante a fabricação de qualquer produto, todo cuidado para evitar a contaminação de materiais é pouco! 
 								Neste contexto, os cuidados na indústria de plásticos devem ser constantes, evitando a contaminação de polímeros.</p>
@@ -673,7 +673,7 @@
 							</a>
 							<div class="lastNews__separator">Separator</div>
 							<h3 class="lastNews__title">
-								<a href="https://www.plastico.com.br/industria-quer-ampliar-a-reciclagem-do-pvc-extrusao/" class="lastNews__titleLink">Reciclagem de PVC – Indústria quer ampliar a reciclagem – Extrusão</a>
+								<a  href="https://www.plastico.com.br/industria-quer-ampliar-a-reciclagem-do-pvc-extrusao/" class="lastNews__titleLink">Reciclagem de PVC – Indústria quer ampliar a reciclagem – Extrusão</a>
 							</h3>
 							<p class="lastNews__text">A preocupação com a reciclagem de PVC está no dia a dia da indústria do plástico e os tubos e perfis fabricados não fogem à regra.</p>
 						</div>
@@ -684,7 +684,7 @@
 							</a>
 							<div class="lastNews__separator">Separator</div>
 							<h3 class="lastNews__title">
-								<a href="https://www.folhavitoria.com.br/geral/noticia/06/2022/iniciativa-busca-reciclar-e-reutilizar-materiais-feitos-de-pvc" class="lastNews__titleLink">Iniciativa busca reciclar e reutilizar materiais feitos de PVC</a>
+								<a href="https://www.folhavitoria.com.br/geral/noticia/06/2022/iniciativa-busca-reciclar-e-reutilizar-materiais-feitos-de-pvc"  class="lastNews__titleLink">Iniciativa busca reciclar e reutilizar materiais feitos de PVC</a>
 							</h3>
 							<p class="lastNews__text">Projeto aproveita o material que sobra de campanhas publicitárias 
 								para a produção de produtos enquanto gera novas oportunidades profissionais</p>
@@ -765,19 +765,46 @@
 	</div>
 </footer>
 </div>
+
 <script src="js/insights.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/aos/aos.min.js"></script>
 <script src="js/aos/aos-settings.js"></script>
 <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+<script>
+    const externalLinks = document.querySelectorAll('.lastNews__titleLink');
+
+    externalLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+
+        Swal.fire({
+          title: 'Aviso!',
+		  html: `Você está prestes a sair do nosso site e ir para o seguinte link externo:<br><strong>${link.href}</strong><br>Deseja continuar?`,
+          icon: 'warning',
+          showCancelButton: true,
+		  confirmButtonColor: '#059469',
+          confirmButtonText: 'Sim, continuar',
+          cancelButtonText: 'Cancelar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = link.href;
+          }
+        });
+      });
+    });
+  </script>
+<div class="copy-notification" id="copyNotification">
+  Copiar conteúdo não é permitido.
+  </div>
 <script>
 	document.addEventListener("DOMContentLoaded", () => {
   const player = new Plyr("#player", {
     controls: ["play", "progress", "current-time", "mute", "volume", "fullscreen"],
-    invertTime: false, // Opcional, define o formato de exibição do tempo
+    invertTime: false,
   });
 
-  // Adicione os estilos CSS diretamente no JavaScript
   const customStyles = document.createElement("style");
   customStyles.innerHTML = `
     .plyr--green {
