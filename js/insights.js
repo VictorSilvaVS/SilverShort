@@ -1,21 +1,21 @@
 // Dados da nova notícia
 const newNewsData = {
-    link: 'https://dialogochino.net/pt-br/mudanca-climatica-e-energia-pt-br/370603-tratado-poluicao-plastico-rascunho-2023/',
-    imageSrc: 'https://dialogochino.net/content/uploads/2023/06/Desechos-Plasticos_Playa-Colombia_Greenpeace_2560-1024x683.png',
-    title: 'Tratado sobre poluição de plástico deve ter rascunho pronto ainda em 2023',
-    text: 'Após negociações em Paris, delegados dão passo importante rumo a acordo juridicamente vinculante para regular o plástico.'
+    link: 'https://pvc.org.br/2023/06/braskem-apresenta-ao-mercado-novas-solucoes-de-pvc-reciclado/',
+    imageSrc: 'https://pvc.org.br/wp-content/uploads/2023/06/capa.jpg',
+    title: 'Braskem apresenta ao mercado novas soluções de PVC reciclado',
+    text: 'Compostos produzidos a partir de matéria-prima reciclada ampliam portfólio Wenew da companhia e reforçam seu posicionamento em prol da economia circular.'
 };
 const newNewsData2 = {
-    link: 'https://www12.senado.leg.br/noticias/materias/2021/07/28/estudo-do-senado-aponta-necessidade-de-leis-para-deter-poluicao-por-plasticos',
-    imageSrc: 'https://blogdoplastico.files.wordpress.com/2019/04/cromex-masterbatches_selo_verde-1.jpg?w=584',
-    title: 'Estudo do Senado aponta necessidade de leis para deter poluição por plásticos',
-    text: 'O crescente aumento da poluição do meio ambiente pelo plástico indica a necessidade de uma legislação nacional sobre o tema. A conclusão é de estudo de autoria do consultor legislativo do Senado Joaquim Maia Neto — Contribuições do Poder Legislativo no Combate à Poluição Causada por Plástico.'
+    link: 'https://mundodoplastico.plasticobrasil.com.br/gestao/contaminacao-de-materiais-cuidados-na-industria-de-plasticos',
+    imageSrc: 'https://mundodoplastico.plasticobrasil.com.br/sites/mundodoplastico.com/files/styles/article_featured_standard/public/Contaminao%20de%20materiais_%20cuidados%20na%20indstria%20de%20plsticos.png?itok=WFMJ6ZKI',
+    title: 'Contaminação de materiais: cuidados na indústria de plásticos',
+    text: 'A contaminação de materiais na indústria de plásticos é um problema que precisa ser evitado.'
 };
 const newNewsData3 = {
-    link: 'https://www.dn.pt/dinheiro/inovacao-como-forma-de-diminuir-impacto-ambiental-dos-plasticos-15263254.html',
-    imageSrc: 'https://static.globalnoticias.pt/dn/image.jpg?brand=DN&type=generate&guid=821c7e35-51a3-4799-a4f3-cc0e513c7d5d&w=800&h=450&t=20221017214202',
-    title: 'Inovação como forma de diminuir impacto ambiental dos plásticos',
-    text: 'Esta é uma das estratégias do sector para contribuir para os objetivos globais da sustentabilidade e da neutralidade carbónica. No Plastics Summit Global Event, os empresários reforçaram o compromisso de aumentar a circularidade dos produtos.'
+    link: 'https://globalkem.com/noticias/noticias/mercado/demanda-de-pvc-deve-crescer-em-2023/',
+    imageSrc: 'https://globalkem.com/wp-content/uploads/2023/06/composicao-de-tubos-de-pvc-de-construcao-1536x1024.jpg',
+    title: 'Demanda de PVC deve crescer em 2023',
+    text: 'O PVC, conhecido por sua resistência, durabilidade e propriedades versáteis, é amplamente utilizado em diversos setores industriais.'
 };
 // Selecione o elemento HTML da notícia
 const newsElement = document.querySelector('.col-md-4.aos-init');
